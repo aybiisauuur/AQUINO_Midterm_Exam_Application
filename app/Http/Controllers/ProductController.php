@@ -10,11 +10,11 @@ class ProductController extends Controller
     public function index()
     {
         $products = [
-            ['title' => 'Gakuen Babysitters', 'author' => 'Hari Tokeino', 'price' => 20.99],
-            ['title' => 'Haikyuu', 'author' => 'Hairuchi Furudate', 'price' => 16.99],
-            ['title' => 'Yuru Camp', 'author' => 'Afro', 'price' => 15.99],
-            ['title' => 'Kono Oto Tomare', 'author' => 'Amyu', 'price' => 17.99],
-            ['title' => 'Attack on Titan', 'author' => 'Hajime Isayama', 'price' => 10.00]
+            ['title' => 'Gakuen Babysitters', 'author' => 'Hari Tokeino', 'genre' => 'Slice of Life'],
+            ['title' => 'Haikyuu', 'author' => 'Hairuchi Furudate', 'genre' => 'Shonen'],
+            ['title' => 'Yuru Camp', 'author' => 'Afro', 'genre' => 'Seinen'],
+            ['title' => 'Kono Oto Tomare', 'author' => 'Amyu', 'genre' => 'Shonen'],
+            ['title' => 'Attack on Titan', 'author' => 'Hajime Isayama', 'genre' => 'Shonen']
         ];
 
         return view('products', ['products' => $products]);
